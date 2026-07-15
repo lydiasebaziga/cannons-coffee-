@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* BASIC FORMATTING */
 html {
   box-sizing: border-box;
@@ -8,9 +9,133 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  
+  --Black: #000000;
+--Catalina: #06327d;
+--Bluetiful:#2b70e4;
+--Vegan: #209d5c;
+--Sunglow: #ffd034;
+--White: #ffffff;
+--Light-Blue: #cadbf8;
+--Montserrat: Montserrat;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body {
-  color: black;
-  background-color: #063270;
+    font-family: var(--Montserrat);
+  color: var(--Black);
   margin: 0;
   padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+ font-weight: 300;
+ line-height: 1.1667;
+ margin: 0;
+ color: var(--White);
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+ font-weight: 300;
+ line-height: 1.1667;
+ margin: 0;
+}
+h3 {
+    font-size: 1.75rem;
+ font-weight: 300;
+ line-height: 1.1667;
+}
+p{
+ font-size: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  flex-flow: row wrap;
+  border-bottom: 15px double var(--Sunglow);
+  background-color: var(--Catalina);
+}
+
+.nav ul {
+  gap: 1rem;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+
+.nav a {
+  align-items: center;
+  display: block;
+  flex-flow: row wrap;
+  text-decoration: none;
+  padding: 1rem;
+  color: var(--White);
+
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+  display: blox;
+  align-items: center;
+  padding:1rem;
+}
+a {
+    text-transform: uppercase;
+}
+.button1{
+    background-color: var(--Vegan);
+    color: var(--White);
+    border-radius: 5px;
+   padding: 0.5rem;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.button{
+    color: var(--White);
+    border-radius: 5px;
+   padding: 0.5rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: var(--Catalina)
+}
+.cards1{
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.cards2{
+  background-color: var(--Light-Blue);
+}
+
+.footer{
+    background-color: var(--Catalina);
+    border-top: 15px double var(--Sunglow);
+  padding: 2rem;
+  text-align: center;
+  color: var(--White);
+}
+.main{
+    gap: 1rem;
+    max-width: 1200;
+    margin: 0 auto;
+    padding: 1rem;
 }
