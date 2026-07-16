@@ -33,6 +33,7 @@ body {
   padding: 0;
   font-size: 1.125rem;
   line-height: 1.5;
+  background-color: var(--Catalina);
   
 }
 h1 {
@@ -42,6 +43,12 @@ h1 {
  line-height: 1.1667;
  margin: 0;
  color: var(--White);
+ font-family: var(--Montserrat);
+}
+.ourcoffee{
+    background-color: var(--Light-Blue);
+    color: var(--Black);
+    padding-top: 3rem;
 }
 h2 {
     text-transform: uppercase;
@@ -59,19 +66,21 @@ p{
  font-size: 1rem;
 }
 
-.header{
+header{
     display: flex;
     justify-content: center;
     text-align: center;
   flex-flow: row wrap;
-  border-bottom: 15px double var(--Sunglow);
+  border-bottom: solid 15px var(--Sunglow);
   background-color: var(--Catalina);
+  padding: 2rem;
+  align-items: baseline;
 }
 
-.nav ul {
+nav ul {
   gap: 1rem;
   list-style-type: none;
-  padding: 1rem;
+  padding: 0;
   margin: 0;
   display: flex;
   flex-flow: row wrap;
@@ -79,7 +88,7 @@ p{
   
 }
 
-.nav a {
+nav a {
   align-items: center;
   display: block;
   flex-flow: row wrap;
@@ -91,10 +100,19 @@ p{
 
 img {
   max-width: 100%;
-  border-radius: 5px;
-  display: blox;
+  border-radius: 10px;
   align-items: center;
-  padding:1rem;
+}
+.computer {
+border-radius: 0px;
+}
+.latte{
+  border-radius: 0px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 a {
     text-transform: uppercase;
@@ -115,27 +133,49 @@ a {
    text-transform: uppercase;
    background-color: var(--Catalina)
 }
-.cards1{
-    background-color: var(--White);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
 
-}
-.cards2{
-  background-color: var(--Light-Blue);
-}
 
-.footer{
+footer{
     background-color: var(--Catalina);
-    border-top: 15px double var(--Sunglow);
+    border-top: solid 15px var(--Sunglow);
   padding: 2rem;
   text-align: center;
   color: var(--White);
 }
-.main{
-    gap: 1rem;
-    max-width: 1200;
-    margin: 0 auto;
-    padding: 1rem;
+
+ .cards1{
+    background-color: var(--White);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+     gap: 1rem;
+}
+.cards2 {
+background-color: var(--Light-Blue);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+@media (min-width: 650px) {
+    .cards2{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    header{
+    justify-content: center;
+}
+}
+
+@media (min-width: 1000px) {
+    .cards2{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    header{
+    justify-content: space-between;
+}
 }
