@@ -49,6 +49,7 @@ h1 {
     background-color: var(--Light-Blue);
     color: var(--Black);
     padding-top: 3rem;
+    padding-left: 1rem;
 }
 h2 {
     text-transform: uppercase;
@@ -67,14 +68,14 @@ p{
 }
 
 header{
+  background-color: var(--Catalina);
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: baseline;
   flex-flow: row wrap;
   border-bottom: solid 15px var(--Sunglow);
-  background-color: var(--Catalina);
   padding: 2rem;
-  align-items: baseline;
 }
 
 nav ul {
