@@ -27,5 +27,8 @@ function onSubmit(event) {
     messageCoffee.textContent = story;
     div.appendChild(messageCoffee);
 
+    form.style.display = "none";
+
     console.log("my Coffee", story);
+    
 }
