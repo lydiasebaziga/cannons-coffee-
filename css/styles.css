@@ -135,6 +135,14 @@ a {
    text-transform: uppercase;
    background-color: var(--Catalina)
 }
+button{
+    color: var(--White);
+    border-radius: 5px;
+   padding: 0.5rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   background-color: var(--Catalina);
+}
 
 
 footer{
@@ -186,7 +194,7 @@ form {
 	max-width: 400px;
 	margin: 40px auto;
 	padding: 20px;
-	background: pink;
+	background: rgb(248, 243, 244);
 	border-radius: 10px;
 	font-family: Arial, sans-serif;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -211,6 +219,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
 select,
 textarea {
 	width: 100%;
