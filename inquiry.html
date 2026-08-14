@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latte</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./images/logo-nav.png" alt="Cannons Coffee Logo, Beans of Joy">
+                <h1>CANNONS COFFEE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">home</a></li>
+                    <li><a href="latte.html" target="_blank">coffee</a></li>
+                    <li><a href="https://www.nasa.gov/contact/" target="_blank">about</a></li>
+                    <li><a href="mailto:lydiase.baziga@gmail.com">contact</a></li>
+                    <li><a href="inquiry.html" target="_blank">Inquiry</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form id="form">
+
+                <!-- Name -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Number -->
+                <label for="phone">Phone:</label><br><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-45-678" required><br><br>
+
+                <!-- Comments -->
+                <label for="comments">Any Comments?</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+                <!-- favorite coffee-->
+                <label for="coffee">favorite coffee:</label><br>
+                <select id="coffee" name="coffee">
+                    <option value="">select favorite coffee</option>
+                    <option value="vanila">vanila</option>
+                    <option value="moca">Moca</option>
+                    <option value="hotchoc">Hot Chocolate</option>
+                </select><br><br>
+
+                <!-- Favorite coffee -->
+                <fieldset>
+                    <legend>Coffee:</legend>
+                    <label><input type="radio" name="toppings" value="buyingcoffee"> buying coffee</label><br>
+                    <label><input type="radio" name="toppings" value="seekingemployment"> seeking employment</label><br>
+                </fieldset><br>
+
+                <!-- Submit Button -->
+                <button type="submit" value="submit">Submit</button>
+            </form>
+
+            <div class="Coffee">
+            </div>
+        </main>
+        <footer>
+            <img src="./images/logo-footer.png" alt="Cannons Coffee, Beans of Joy! Est. 2014">
+            <p>&copy; 2026 cannons coffee, all rights. resolved</p>
+        </footer>
+    </div>
+    <script src="js/custom-inquiry.js"></script>
+</body>
+
+</html>
