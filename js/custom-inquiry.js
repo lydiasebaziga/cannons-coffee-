@@ -1,10 +1,4 @@
-let name = "lydia";
-let tel = 4056676668;
-let buying = ["buying coffee", "seeking employmen"];
-let favoritecoffee = ["vanila", "moca", "hotchoc"]
-let comment = "it was soo funy";
-let email = "lydia@gmail.com";
-let number = 123456789;
+
 
 const form = document.getElementById("form");
 const div = document.querySelector("div");
@@ -18,10 +12,18 @@ function onSubmit(event) {
     const dataObj = Object.fromEntries(data.entries());
 
     console.log("our data:", dataObj);
+
     form.reset();
 
 
-    let story = ` Thank you ${name}! We appreciate your interest in ${buying}. Your favorite coffee flavor is ${favoritecoffee} and your comments are ${comment}. We will soon contact you at ${email} or ${tel}`;
+    let name = dataObj.name;
+let tel = dataObj.phone;
+    let buying = dataObj.toppings;
+    let seekingemployment = dataObj.toppings
+    let favoritecoffee = dataObj.coffee;
+let comment =dataObj.comments;
+let email = dataObj.email;
+    let story = ` Thank you ${name}! We appreciate your interest in ${buying} ${seekingemployment}. Your favorite coffee flavor is ${favoritecoffee} and your comments are ${comment}. We will soon contact you at ${email} or ${tel}`;
 
     let messageCoffee = document.createElement("p");
     messageCoffee.textContent = story;
