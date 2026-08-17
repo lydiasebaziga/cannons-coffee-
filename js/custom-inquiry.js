@@ -23,7 +23,7 @@ let tel = dataObj.phone;
     let favoritecoffee = dataObj.coffee;
 let comment =dataObj.comments;
 let email = dataObj.email;
-    let story = ` Thank you ${name}! We appreciate your interest in ${buying} ${seekingemployment}. Your favorite coffee flavor is ${favoritecoffee} and your comments are ${comment}. We will soon contact you at ${email} or ${tel}`;
+    let story = ` Thank you ${name}! We appreciate your interest in ${toppings}. Your favorite coffee flavor is ${favoritecoffee} and your comments are ${comment}. We will soon contact you at ${email} or ${tel}`;
 
     let messageCoffee = document.createElement("p");
     messageCoffee.textContent = story;
