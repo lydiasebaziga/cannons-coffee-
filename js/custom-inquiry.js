@@ -17,13 +17,14 @@ function onSubmit(event) {
 
 
     let name = dataObj.name;
-let tel = dataObj.phone;
+    let email = dataObj.email;
+    let tel = dataObj.phone;
     let buying = dataObj.toppings;
     let seekingemployment = dataObj.toppings
     let favoritecoffee = dataObj.coffee;
-let comment =dataObj.comments;
-let email = dataObj.email;
-    let story = ` Thank you ${name}! We appreciate your interest in ${toppings}. Your favorite coffee flavor is ${favoritecoffee} and your comments are ${comment}. We will soon contact you at ${email} or ${tel}`;
+    let comment = dataObj.comments;
+
+    let story = ` Thank you ${name}! We appreciate your interest in ${buying}. Your favorite coffee flavor is ${favoritecoffee} and your comments are ${comment}. We will soon contact you at ${email} or ${tel}`;
 
     let messageCoffee = document.createElement("p");
     messageCoffee.textContent = story;

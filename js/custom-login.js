@@ -1,4 +1,3 @@
-let name = "lydia";
 
 const form = document.getElementById("form");
 const div = document.querySelector("div");
@@ -11,7 +10,7 @@ function onSubmit(event) {
 
     const data = new FormData(form);
     const dataObj = Object.fromEntries(data.entries());
-
+ let name = dataObj.name;
     console.log("our data:", dataObj);
     form.reset();
 
